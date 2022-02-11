@@ -18,6 +18,14 @@
 
     }
 })();
+
+(function(){
+    self.Bar = function(x,y,width,height,board){
+
+    
+
+}
+})();
 (function main(){
     self.BoardView = function(canvas, board){
         this.canvas = canvas;
