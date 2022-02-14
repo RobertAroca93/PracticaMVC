@@ -33,7 +33,7 @@
         this.direction = -1;
         this.bounce_angle = 0;
         this.max_bounce_angle = Math.PI/12;
-        this.speed = 1;
+        this.speed = 3;
 
         this.kind =   "circle";
 
@@ -195,26 +195,26 @@
 
 document.addEventListener("keydown", function(ev) {  
     
-    console.log(ev.keycode);
-    if(ev.keycode == 38 ) {
+    console.log(ev.keyCode);
+    if(ev.keyCode == 38 ) {
         ev.preventDefault();
         bar.up();
     }
-    else if (ev.keycode == 40){
+    else if (ev.keyCode == 40){
         ev.preventDefault();
         bar.down();
     }
-    else if (ev.keycode == 87){
+    else if (ev.keyCode == 87){
     //W
         ev.preventDefault();
         bar_2.up();
     }
-    else if (ev.keycode == 83){
+    else if (ev.keyCode == 83){
     //S
         ev.preventDefault();
         bar_2.down();
     }
-    else if (ev.keycode == 32) {
+    else if (ev.keyCode == 32) {
         ev.preventDefault();
         board.playing = !board.playing;
     }
